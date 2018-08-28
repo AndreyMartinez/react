@@ -12,4 +12,8 @@ export default [
     title:'contactenos',
     url:'/contact'
 },
+{
+    title:'inicio',
+    url:'/inicio'
+}
 ]

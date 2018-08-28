@@ -8,6 +8,7 @@ import About from './components/about/about'
 import Contact from './components/contact/contact'
 import Page404 from './components/page404/page404'
 import Home from './components/home/home'
+import Inicio from './components/inicio/inicio'
 
 const AppRoutes = () =>
 <App>
@@ -15,6 +16,7 @@ const AppRoutes = () =>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
         <Route path="./" component={Home}/>
+        <Route path="/inicio" component={Inicio} /> 
         <Route  componnent={Page404}/>
     </switch>
     </App>;
