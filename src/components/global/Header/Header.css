@@ -1,0 +1,22 @@
+
+.HeaderElement{
+    background-image: url('./../../assets/01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.Menu{
+  text-decoration: none;
+    margin:o;
+    padding: 0;
+    list-style:none;
+}
+
+.Menu li{
+     text-decoration: none;
+    color:lime;
+    display: inline-block;
+    padding-right: 18px;
+}
