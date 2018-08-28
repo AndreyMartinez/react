@@ -1,20 +1,22 @@
 //dependencies
-import React , {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-class TodoList extends Component{
-   static PropTypes ={
-       item: PropTypes.array.isRequired
-   }
+class TodoList extends Component {
+    static PropTypes = {
+        item: PropTypes.array.isRequired
+    }
 
-    render(){
+    render() {
 
-        return(
-               <ul>
-       {
-           this.props.item.map(item => (
-  <li key={item.id}> {item.text}</li>
-           ))}
-               </ul>
+        return (
+            <ul>
+                {
+                    this.props.item.map(item => (
+                        <li key={item.id}> {item.text} {item.id}
+                        </li>
+
+                    ))}
+            </ul>
         );
     }
 }

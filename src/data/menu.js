@@ -15,5 +15,9 @@ export default [
 {
     title:'inicio',
     url:'/inicio'
+},
+{
+    title:'clock',
+    url:'/clock'
 }
 ]
