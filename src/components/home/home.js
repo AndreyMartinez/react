@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 //Component
 import Header from './../global/Header/Header'
-
+//utils
+import * as Logger from '../../util/logger'
 //Data
 import menu from './../../data/menu'
 
@@ -12,6 +13,7 @@ static propTypes = {
     body: PropTypes.object.isRequired
 };
     render(){
+        Logger.error('hello WORLD');
         const {body} = this.props
         return (
             <div>
