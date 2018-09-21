@@ -1,23 +1,21 @@
-const global = window
-let logEngine = global.console
+let logWindow = window.console
 
-function prefixMessage(logType,message){
+function messageElements(logType,message){
     return `[${logType.toUpperCase()} ${new Date().toTimeString().slice(0, 8)}] ${message}`
 }
 
-function _log(logType, message, ...args) {
-    logEngine[logType](prefixMessage(logType, message), ...args)
+function log(logType, message, ...args) {
+    logWindow[logType](messageElements(logType, message), ...args)
 }
 
 
   export function log(...args) {
-    _log('log', ...args)
+    log('log', ...args)
   }
-
-  export function warn(...args) {
-    _log('warn', ...args)
-  }
-
   export function error(...args) {
-    _log('error', ...args)
+    log('error', ...args)
   }
+  export function warn(...args) {
+    log('warn', ...args)
+  }
+
